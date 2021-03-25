@@ -25,7 +25,7 @@ public class PriorityQueueTest {
     public void parametersizedTest(int[] input, int[] expect){
         PriorityQueue pqInput = new PriorityQueue();
         for(int e : input){
-            pqInput.offer(e+1);
+            pqInput.offer(e);
         }
         for(int e : expect){
             assertEquals(e, pqInput.poll());
